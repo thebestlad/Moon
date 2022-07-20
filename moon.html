@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+div{
+    height: 256px;
+    width: 256px;
+    background-image: linear-gradient(to right, #13223f, #2b4980);
+    border-radius: 50%;
+    animation-name: move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+body{
+    display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+background-image: linear-gradient(to right, #182C51, #09101e);
+}
+@keyframes move{
+   0%{
+        transform: translate(-30px,30px) scale(0.9);
+        box-shadow: 0px 0px 10px #f9f3f3, 0px 0px 80px 8px #C7938b;
+   }
+   50%{
+        transform: translate(0px,0px) scale(1.2);
+        box-shadow: 0px 0px 10px #f9f3f3, 0px 0px 80px 8px #C7938b;
+   }
+   100%{
+    transform: translate(30px,-30px) scale(0.9);
+   }
+}
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+</html>
